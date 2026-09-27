@@ -89,3 +89,23 @@ export const maisonFaveSocials = [
   { label: 'LinkedIn', href: 'https://www.linkedin.com/', icon: 'linkedin' },
   { label: 'YouTube', href: 'https://www.youtube.com/', icon: 'youtube' },
 ] as const;
+
+/** Options and copy for the "Work with us" enquiry popup. */
+export const maisonFaveEnquiry = {
+  /** Fallback inbox when no form endpoint is configured — confirm before launch. */
+  email: 'hello@maisonfave.com',
+  services: [
+    'Weddings',
+    'Event planning & curation',
+    'Event design & styling',
+    'Interior & spatial design',
+    'Gifting & curation',
+    'Something else',
+  ],
+  budgets: ['Under ₦10m', '₦10m – ₦30m', '₦30m – ₦75m', '₦75m+', 'International / USD budget'],
+  steps: [
+    'Tell us about your idea',
+    'We reply within two working days',
+    'A discovery call to shape the vision',
+  ],
+};

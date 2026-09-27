@@ -1,5 +1,6 @@
-import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
+
+import WorkWithUsButton from './WorkWithUsButton';
 
 const WorkWithUs = () => (
   <section
@@ -35,13 +36,12 @@ const WorkWithUs = () => (
         Experiences stay.
       </p>
 
-      <Link
-        href="https://weddingsbymaisonfave.com/#plan-your-wedding"
+      <WorkWithUsButton
         className="inline-flex shrink-0 items-center gap-4 rounded-full border border-[#F3E9DC]/40 px-8 py-4 font-lato text-[11px] uppercase tracking-[0.24em] text-[#F3E9DC] transition-colors hover:bg-[#F3E9DC] hover:text-[#4A1620]"
       >
         Work with us
         <ArrowRight className="h-4 w-4" />
-      </Link>
+      </WorkWithUsButton>
     </div>
   </section>
 );

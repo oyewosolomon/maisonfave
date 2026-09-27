@@ -6,6 +6,7 @@ import { Menu, X } from 'lucide-react';
 
 import { maisonFaveNav } from '@/lib/data/maison-fave';
 import Monogram from './Monogram';
+import WorkWithUsButton from './WorkWithUsButton';
 
 /**
  * Overlays the hero photo while at the top of the page, then swaps to a solid
@@ -58,8 +59,7 @@ const SiteNav = () => {
         </nav>
 
         <div className="flex items-center gap-4">
-          <Link
-            href="#contact"
+          <WorkWithUsButton
             className={`hidden rounded-full border px-7 py-3 font-lato text-[11px] uppercase tracking-[0.22em] transition-colors md:inline-block ${
               onDark
                 ? 'border-white/40 bg-[#4A1620]/80 text-white hover:bg-[#4A1620]'
@@ -67,7 +67,7 @@ const SiteNav = () => {
             }`}
           >
             Work with us
-          </Link>
+          </WorkWithUsButton>
 
           <button
             type="button"
@@ -97,13 +97,12 @@ const SiteNav = () => {
               </li>
             ))}
             <li>
-              <Link
-                href="#contact"
+              <WorkWithUsButton
                 onClick={() => setMenuOpen(false)}
                 className="inline-block rounded-full bg-[#4A1620] px-7 py-3 font-lato text-[11px] uppercase tracking-[0.22em] text-[#F6F1E9]"
               >
                 Work with us
-              </Link>
+              </WorkWithUsButton>
             </li>
           </ul>
         </nav>

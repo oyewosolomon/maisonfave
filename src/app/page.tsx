@@ -1,3 +1,4 @@
+import { BookingProvider } from '@/components/maison-fave/BookingProvider';
 import SiteNav from '@/components/maison-fave/SiteNav';
 import Hero from '@/components/maison-fave/Hero';
 import WhatWeDo from '@/components/maison-fave/WhatWeDo';
@@ -8,16 +9,18 @@ import SiteFooter from '@/components/maison-fave/SiteFooter';
 
 export default function HomePage() {
   return (
-    <div className="bg-[#F6F1E9]">
-      <SiteNav />
-      <main>
-        <Hero />
-        <WhatWeDo />
-        <CreativeHouse />
-        <OurBrands />
-        <WorkWithUs />
-      </main>
-      <SiteFooter />
-    </div>
+    <BookingProvider>
+      <div className="bg-[#F6F1E9]">
+        <SiteNav />
+        <main>
+          <Hero />
+          <WhatWeDo />
+          <CreativeHouse />
+          <OurBrands />
+          <WorkWithUs />
+        </main>
+        <SiteFooter />
+      </div>
+    </BookingProvider>
   );
 }
