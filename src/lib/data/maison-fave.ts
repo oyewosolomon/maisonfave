@@ -66,7 +66,7 @@ export const maisonFaveBrands = [
     href: '#our-brands',
     /** Design calls for: a styled sitting room — sofa, fireplace, greenery. */
     image: {
-      src: '/assets/images/home/venue-details-collage.webp',
+      src: '/assets/images/home/Interior-design.jpeg',
       alt: 'Champagne tower, mirrored signage and a tiered cake styled across a venue',
     },
   },
