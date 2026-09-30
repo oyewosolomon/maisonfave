@@ -77,17 +77,17 @@ export const maisonFaveBrands = [
     href: '#our-brands',
     /** Design calls for: a Maison Fave gift box tied with a burgundy ribbon. */
     image: {
-      src: '/assets/images/portfolio/middle-east/berry-cake-detail.webp',
+      src: '/assets/images/home/gifts.jpeg',
       alt: 'Berry mille-feuille on a linen table with a red ribbon tied to the cake server',
     },
   },
 ];
 
 export const maisonFaveSocials = [
-  { label: 'Instagram', href: 'https://www.instagram.com/', icon: 'instagram' },
-  { label: 'Pinterest', href: 'https://www.pinterest.com/', icon: 'pinterest' },
-  { label: 'LinkedIn', href: 'https://www.linkedin.com/', icon: 'linkedin' },
-  { label: 'YouTube', href: 'https://www.youtube.com/', icon: 'youtube' },
+  { label: 'Instagram', href: 'https://www.instagram.com/maisonfave', icon: 'instagram' },
+  { label: 'Pinterest', href: 'https://www.pinterest.com/maisonfave', icon: 'pinterest' },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/company/maisonfave', icon: 'linkedin' },
+  { label: 'YouTube', href: 'https://www.youtube.com/@maisonfave', icon: 'youtube' },
 ] as const;
 
 /** Options and copy for the "Work with us" enquiry popup. */
@@ -108,4 +108,11 @@ export const maisonFaveEnquiry = {
     'We reply within two working days',
     'A discovery call to shape the vision',
   ],
+};
+
+/** The short film shown under "The creative house" (a vertical YouTube Short). */
+export const maisonFaveFilm = {
+  youtubeId: 'sVLxOm2OQWQ',
+  title: 'Maison Fave — a moment from our work',
+  url: 'https://youtube.com/shorts/sVLxOm2OQWQ',
 };

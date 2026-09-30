@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { Menu, X } from 'lucide-react';
 
 import { maisonFaveNav } from '@/lib/data/maison-fave';
-import Monogram from './Monogram';
+import BrandMark from './BrandMark';
 import WorkWithUsButton from './WorkWithUsButton';
 
 /**
@@ -37,7 +37,7 @@ const SiteNav = () => {
           href="#top"
           className={`flex items-center gap-4 ${onDark ? 'text-white' : 'text-[#2A1E18]'}`}
         >
-          <Monogram className="h-9 w-9 shrink-0 lg:h-11 lg:w-11" />
+          <BrandMark className="h-10 w-8 shrink-0 lg:h-12 lg:w-10" />
           <span className="font-playfair text-base tracking-[0.34em] lg:text-xl">
             MAISON FAVE
           </span>

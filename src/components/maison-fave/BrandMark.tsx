@@ -1,26 +1,22 @@
 /**
- * The boxed MF monogram. Drawn rather than served as an image so it stays
- * crisp at every size and can be recoloured by whatever band it sits in.
+ * The Maison Fave leaf mark. The PNG is only used as a mask, so the mark takes
+ * the current text colour and can flip between light and dark with the nav.
  */
-const Monogram = ({ className = '' }: { className?: string }) => (
-  <svg
-    viewBox="0 0 48 48"
+const BrandMark = ({ className = '' }: { className?: string }) => (
+  <span
     aria-hidden="true"
-    className={className}
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <rect x="0.5" y="0.5" width="47" height="47" stroke="currentColor" strokeWidth="1" />
-    <text
-      x="24"
-      y="32"
-      textAnchor="middle"
-      fill="currentColor"
-      style={{ fontFamily: 'var(--font-playfair), serif', fontSize: '22px', letterSpacing: '0.02em' }}
-    >
-      MF
-    </text>
-  </svg>
+    className={`inline-block bg-current ${className}`}
+    style={{
+      maskImage: 'url(/assets/images/brand/maisonfave-mark.png)',
+      WebkitMaskImage: 'url(/assets/images/brand/maisonfave-mark.png)',
+      maskSize: 'contain',
+      WebkitMaskSize: 'contain',
+      maskRepeat: 'no-repeat',
+      WebkitMaskRepeat: 'no-repeat',
+      maskPosition: 'center',
+      WebkitMaskPosition: 'center',
+    }}
+  />
 );
 
-export default Monogram;
+export default BrandMark;

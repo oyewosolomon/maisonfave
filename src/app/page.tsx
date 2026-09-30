@@ -3,6 +3,7 @@ import SiteNav from '@/components/maison-fave/SiteNav';
 import Hero from '@/components/maison-fave/Hero';
 import WhatWeDo from '@/components/maison-fave/WhatWeDo';
 import CreativeHouse from '@/components/maison-fave/CreativeHouse';
+import FilmFeature from '@/components/maison-fave/FilmFeature';
 import OurBrands from '@/components/maison-fave/OurBrands';
 import WorkWithUs from '@/components/maison-fave/WorkWithUs';
 import SiteFooter from '@/components/maison-fave/SiteFooter';
@@ -16,6 +17,7 @@ export default function HomePage() {
           <Hero />
           <WhatWeDo />
           <CreativeHouse />
+          <FilmFeature />
           <OurBrands />
           <WorkWithUs />
         </main>
