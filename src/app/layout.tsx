@@ -18,9 +18,9 @@ const lato = Lato({
 });
 
 const siteUrl = 'https://maisonfave.com';
-const title = 'Maison Fave | A Creative House for Events, Spaces and Experiences';
+const title = 'Maison Fave | Creative House for Events & Spaces in Lagos';
 const description =
-  'Maison Fave is a multidisciplinary creative house curating events, transforming spaces and bringing ideas to life — from intimate gatherings to large-scale celebrations, destination events and productions.';
+  'Maison Fave is a Lagos creative house curating events, transforming spaces and crafting experiences, from intimate gatherings to destination celebrations.';
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -76,7 +76,9 @@ const organizationJsonLd = {
   name: 'Maison Fave',
   description,
   url: siteUrl,
+  logo: `${siteUrl}/assets/images/brand/maisonfave-mark.png`,
   image: `${siteUrl}/assets/images/brand/og-maison-fave.jpg`,
+  sameAs: ['https://www.instagram.com/maisonfave'],
   address: {
     '@type': 'PostalAddress',
     addressLocality: 'Lagos',
